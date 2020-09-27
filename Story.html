@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>story</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://www.google.co.in/imgres?imgurl=https%3A%2F%2F64.media.tumblr.com%2F94404cc2a47baed129a126017b12bbd5%2Ftumblr_o8a8wzHIUq1vqfx8oo1_500.jpg&imgrefurl=https%3A%2F%2Fpurrpleaesthetic.tumblr.com%2Fpost%2F145438596124&tbnid=aousJp58j4LWUM&vet=12ahUKEwjk_PrY9YjsAhUS8zgGHbzoB0sQMygSegUIARD2AQ..i&docid=ZK6t6uj2crtSCM&w=500&h=750&q=aesthetic%20purple&hl=en-GB&ved=2ahUKEwjk_PrY9YjsAhUS8zgGHbzoB0sQMygSegUIARD2AQ.jpeg"
-   rel="stylesheet">
-</head>
+<title>Example of Text Block Over Image</title>
+<style>
+    .box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 20%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.8);
+        font-family: Arial,sans-serif;
+        color: #fff;
+        width: 40%; /* Set the width of the positioned div */
+    }
+</style>
+</head> 
 <body>
-    <div class="content-wrapper">
-    <img src="image/https://www.google.co.in/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fwallpapers%2Fcolors%2Fpurple&psig=AOvVaw2-Eu7-WhBIq-BDMmXlFUQh&ust=1601286357215000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjpyt2GiewCFQAAAAAdAAAAABAE.jpg">
-    <divclass="text-wrapper">
-    <h1> "you are the cause of my EUPHORIA"</h1>
-     </div>
+    <div class="box">
+    	<img src="pur.jpeg" alt="purple">
+        <div class="text">
+            <h1>"YOU are the cause of my EUPHORIA"</h1>
+        </div>
     </div>
-    </body>
-    </html>
-    
+</body>
+</html>
     
